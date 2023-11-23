@@ -1,0 +1,69 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: 100PX;
+    background-color: #24434b;
+}
+
+.calculadora{
+    background-color: aquamarine;
+    width: 400px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo{
+    margin-top:10px ;
+    margin-left: -160px;
+}
+
+.visor{
+    background-color: black;
+    margin-top: 20px;
+    height: 70px;
+    width: 340px;
+}
+
+.teclado{
+  
+    width: 340px;
+    height: 220px;
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: center;
+    gap: 5px;
+}
+
+.botoes{
+    background: rebeccapurple;
+    width: 100PX;
+    height: 40PX;
+    margin-top: 10px;
+    font-size: 30px; 
+    background-color: aliceblue;
+}
+
+.botoesEspeciais{
+    margin-top: 50px;
+   
+    width: 340px;
+    height: 110px;
+    display: flex;
+    flex-wrap: wrap;
+    gap:5px;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.botoes:hover{
+    background-color: #24434b;
+}
