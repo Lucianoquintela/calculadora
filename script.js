@@ -1,4 +1,4 @@
 function teclaPressionada() {
-  
-    console.log(teclas)
- }
+   var tecla = document.getElementsByClassName('botoes').value
+   console.log(tecla) 
+}
