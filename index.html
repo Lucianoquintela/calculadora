@@ -6,41 +6,41 @@
     <title>-- Calculadora 2023 --</title>
 
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
 
     <main class="calculadora">
 
-        <h2 class="titulo">Calculadora Web</h2>
+        <h2 class="titulo">-- Calculadora Web 2023 --</h2>
 
         <div class="visor">
+            <p class="textoDoVisor" id="exibirResultado"></p>
         </div>
        
-        <div class="teclado">
+        <div class="teclado"  onclick="teclaPressionada(this.value)">
             
-                <button class="botoes">1</button>
-                <button class="botoes">2</button>
-                <button class="botoes">3</button>
-                <button class="botoes">4</button>
-                <button class="botoes">5</button>
-                <button class="botoes">6</button>
-                <button class="botoes">7</button>
-                <button class="botoes">8</button>
-                <button class="botoes">9</button>
-                <button class="botoes">0</button>
+                <button class="botoes" id="teclaApertada1" >1</button>
+                <button class="botoes" id="teclaApertada2">2</button>
+                <button class="botoes" id="teclaApertada3">3</button>
+                <button class="botoes" id="teclaApertada4">4</button>
+                <button class="botoes" id="teclaApertada5">5</button>
+                <button class="botoes" id="teclaApertada6">6</button>
+                <button class="botoes" id="teclaApertada7">7</button>
+                <button class="botoes" id="teclaApertada9">8</button>
+                <button class="botoes" id="teclaApertada9">9</button>
+                <button class="botoes" id="teclaApertada0">0</button>
 
-            
-            
         </div>
 
         <DIV class="botoesEspeciais">
-            <button class="botoes">-</button>
-            <button class="botoes">+</button>
-            <button class="botoes">x</button>
-            <button class="botoes">/</button>
-            <button class="botoes">=</button>
+            <button class="botoes" id="teclaApertada-">-</button>
+            <button class="botoes" id="teclaApertada+">+</button>
+            <button class="botoes" id="teclaApertadax">x</button>
+            <button class="botoes" id="teclaApertada/">/</button>
+            <button class="botoes" id="teclaApertada=">=</button>
         </DIV>
-
+      <img src="./hacker.gif" class="imagemDecoracao">
     </main>
 
 </body>

@@ -17,11 +17,12 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: solid rgb(0, 0, 0) 2px  ;
 }
 
 .titulo{
     margin-top:10px ;
-    margin-left: -160px;
+   
 }
 
 .visor{
@@ -29,8 +30,17 @@ body{
     margin-top: 20px;
     height: 70px;
     width: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
 }
 
+.textoDoVisor{
+ 
+    font-size: 20px;
+    color: white;
+}
 .teclado{
   
     width: 340px;
@@ -44,12 +54,13 @@ body{
 }
 
 .botoes{
-    background: rebeccapurple;
+ 
     width: 100PX;
     height: 40PX;
     margin-top: 10px;
     font-size: 30px; 
-    background-color: aliceblue;
+    background-color: #8cd0e0;
+    cursor: pointer;
 }
 
 .botoesEspeciais{
@@ -65,5 +76,12 @@ body{
 }
 
 .botoes:hover{
-    background-color: #24434b;
+  
+    color: aliceblue;
+}
+
+.imagemDecoracao{
+    width:400px;
+    height:160px;
+    margin-top: 19px;
 }
