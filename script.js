@@ -1,7 +1,14 @@
-function teclaPressionada() {
-   var tecla = document.getElementsByClassName('botoes').value
-   console.log(tecla) 
+let tecla = document.getElementById('exibirResultado');
 
-   var tecla1 = tecla
-   document.getElementById('exibirResultado').innerHTML = tecla1
+function getResult(value) {
+    if (value === "=") {
+        tecla.textContent = eval(tecla.textContent);
+    } else {
+        tecla.textContent += value;
+    }
 }
+
+function limparResultado() {
+    tecla.textContent = "";
+}
+

@@ -1,48 +1,77 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>-- Calculadora 2023 --</title>
 
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
+
 <body>
 
     <main class="calculadora">
 
-        <h2 class="titulo">-- Calculadora Web 2023 --</h2>
+<h2 class="titulo"><span>--</span> Calculadora Web 2024 <span>--</span></h2>
+
+
 
         <div class="visor">
             <p class="textoDoVisor" id="exibirResultado"></p>
         </div>
+
        
+
         <div class="teclado"  >
+
             
-                <button class="botoes" onclick="teclaPressionada()">1</button>
-                <button class="botoes" onclick="teclaPressionada()">2</button>
-                <button class="botoes" onclick="teclaPressionada()">3</button>
-                <button class="botoes" onclick="teclaPressionada()">4</button>
-                <button class="botoes" onclick="teclaPressionada()">5</button>
-                <button class="botoes" onclick="teclaPressionada()">6</button>
-                <button class="botoes" onclick="teclaPressionada()">7</button>
-                <button class="botoes" onclick="teclaPressionada()">8</button>
-                <button class="botoes" onclick="teclaPressionada()">9</button>
-                <button class="botoes" onclick="teclaPressionada()">0</button>
+
+                <button class="botoes" onclick="getResult('1')">1</button>
+
+                <button class="botoes" onclick="getResult('2')">2</button>
+<button class="botoes" onclick="getResult(' + ')" id="BtnEspeciais">+</button>
+                <button class="botoes" onclick="getResult('3')">3</button>
+
+                <button class="botoes" onclick="getResult('4')">4</button>
+<button class="botoes" onclick="getResult(' - ')" id="BtnEspeciais">-</button>
+                <button class="botoes" onclick="getResult('5')">5</button>
+
+                <button class="botoes" onclick="getResult('6')">6</button>
+<button class="botoes" onclick="getResult(' * ')" id="BtnEspeciais">*</button>
+                <button class="botoes" onclick="getResult('7')">7</button>
+
+<button class="botoes" onclick="getResult('8')">8</button>
+                
+<button class="botoes" onclick="getResult(' / ')" id="BtnEspeciais">÷</button>
+                <button class="botoes" onclick="getResult('9')">9</button>
+
+                <button class="botoes" onclick="getResult('0')">0</button>
+
+
+
+            
+
+
+            <button class="botoes" id="BtnEspeciais" onclick="getResult('=')">=</button>
+
+<button class="botoes" onclick="limparResultado()" id="BtnLimpar">Limpar</button>
 
         </div>
 
-        <div class="botoesEspeciais">
-            <button class="botoes" onclick="teclaPressionada()">-</button>
-            <button class="botoes" onclick="teclaPressionada()">+</button>
-            <button class="botoes" onclick="teclaPressionada()">x</button>
-            <button class="botoes" onclick="teclaPressionada()">/</button>
-            <button class="botoes" onclick="teclaPressionada()">=</button>
-        </div>
+
+        
 
       <img src="./hacker.gif" class="imagemDecoracao">
+<marquee>Desenvolvido por Luciano Quintela</marquee>
+
     </main>
 
+
+
 </body>
+
 </html>
+

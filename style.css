@@ -1,87 +1,224 @@
 *{
+
     margin: 0%;
+
     padding: 0%;
+
 }
+
+
 
 body{
+
     display: flex;
+
     justify-content: center;
+
     margin-top: 100PX;
+
     background-color: #24434b;
+
 }
+
+
 
 .calculadora{
+
     background-color: aquamarine;
+
     width: 400px;
+
     height: 700px;
+
     display: flex;
+
     flex-direction: column;
+
     align-items: center;
+
     border: solid rgb(0, 0, 0) 2px  ;
+
 }
+
+
 
 .titulo{
+    
     margin-top:10px ;
+
    
+
 }
 
+
+
 .visor{
-    background-color: black;
+
+    background-color: black ;
+    border:;
     margin-top: 20px;
-    height: 70px;
+
+    height: 80px;
+border:solid 4px;
     width: 340px;
+
     display: flex;
+
     justify-content: center;
+
     align-items: center;
+
    
+
+}
+
+span{
+    animation: mudarCor 3s infinite;
+}
+
+#BtnEspeciais{
+    background-color:orange;
 }
 
 .textoDoVisor{
+
  
+
     font-size: 20px;
+
     color: white;
+
 }
+
 .teclado{
-  
+
+  background-color:;
+
     width: 340px;
-    height: 220px;
+
+   
+
     margin-top: 15px;
+
     display: flex;
+
     flex-wrap: wrap;
-    overflow: hidden;
+
+    
+
     justify-content: center;
-    gap: 5px;
+
+    gap: 5px 15px;
+
 }
+
+
 
 .botoes{
- 
-    width: 100PX;
+font-weight:bold;
+ transition: 0.2s ease-in-out;
+
+    width: 90PX;
+
     height: 40PX;
+
     margin-top: 10px;
+    border:none;
     font-size: 30px; 
-    background-color: #8cd0e0;
+    color:white;
+    background-color: green;
+
     cursor: pointer;
+
 }
 
-.botoesEspeciais{
-    margin-top: 50px;
-   
-    width: 340px;
-    height: 110px;
-    display: flex;
-    flex-wrap: wrap;
-    gap:5px;
-    overflow: hidden;
-    justify-content: center;
+
+marquee{
+    margin-top:10px;
+    animation: mudarCor 4s infinite;
 }
+.botoesEspeciais{
+
+    margin-top: 50px;
+
+   cursor: pointer;
+
+    width: 340px;
+
+    height: 110px;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap:5px;
+
+    
+
+    justify-content: center;
+
+}
+
+
 
 .botoes:hover{
+
   
-    color: aliceblue;
+transform: scale(1.05);
+    color: #7bbda1;
+    border: solid 2px black;
+
+}
+
+#BtnLimpar {
+    font-size:22px;
+    background-color:Tomato;
 }
 
 .imagemDecoracao{
+
     width:400px;
+
     height:160px;
+
     margin-top: 19px;
+
+}
+
+@keyframes mudarCor {
+  0% {
+    color: Lime;
+  }
+  50% {
+    color: red;
+  }
+  80% {
+      color:gold;
+  }
+  100% {
+    color: #7B68EE;
+  }
+}
+
+
+  
+
+
+@media(max-width:1280px) {
+  body{
+
+    background-color: aquamarine;
+    }  
+    
+    .calculadora{
+        border: none  ;
+    }
+    
+    .titulo{
+
+    margin-top:-60px ;
+
+   
+
+}
 }
